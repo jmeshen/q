@@ -3,11 +3,15 @@ import styled from "styled-components";
 import SubmitBox from "./SubmitBox";
 
 const ListContainer = styled.div`
-  background-color: #242526;
-  color: white;
   width: 100%;
-  height: 100vh;
   font-size: 1.4rem;
+  margin: 0 auto;
+`;
+
+const LinksList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  max-width: 68rem;
   margin: 0 auto;
 `;
 
@@ -23,7 +27,7 @@ const links = [
   "https://youtube.com"
 ];
 
-const LinksList = links.map((link, index) => (
+const LinkItems = links.map((link, index) => (
   <ListItem key={index}>
     <input type="checkbox" /> {link}
   </ListItem>
@@ -34,7 +38,7 @@ class List extends Component {
     return (
       <ListContainer>
         <SubmitBox />
-        <ul>{LinksList}</ul>
+        <LinksList>{LinkItems}</LinksList>
       </ListContainer>
     );
   }

@@ -27,5 +27,9 @@ injectGlobal`
     padding: 0;
     margin: 0;
     font-size: 10px;
+    height: 100vh;
+    background-color: #242526;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
   }
 `;
