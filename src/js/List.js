@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import SubmitBox from "./SubmitBox";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import SubmitBox from './SubmitBox';
 
 const ListContainer = styled.div`
   width: 100%;
@@ -22,9 +22,9 @@ const ListItem = styled.li`
 `;
 
 const links = [
-  "https://google.com",
-  "https://reddit.com",
-  "https://youtube.com"
+  'https://google.com',
+  'https://reddit.com',
+  'https://youtube.com',
 ];
 
 const LinkItems = links.map((link, index) => (

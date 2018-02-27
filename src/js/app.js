@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { render } from "react-dom";
-import styled, { injectGlobal } from "styled-components";
-import List from "./List";
-import Nav from "./Nav";
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import styled, { injectGlobal } from 'styled-components';
+import List from './List';
+import Nav from './Nav';
 
 const Root = styled.div`
   display: flex;
@@ -20,7 +20,7 @@ export default class Main extends Component {
   }
 }
 
-render(<Main />, document.getElementById("app"));
+render(<Main />, document.getElementById('app'));
 
 injectGlobal`
   body {
